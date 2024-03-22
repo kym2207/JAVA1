@@ -34,25 +34,28 @@ public class MultiIfTest2 {
 		int num = stdIn.nextInt();
 		
 		// 2.90점 이상인지
-		if(num>=90) {
+		if(num>=90 && 100 >=num) {
 			System.out.println("A학점입니다.");
 		}
 		// 3. 아니면 80점 이상인지
-		else if(num>=80) {
+		else if(num>=80 && 100 >=num) {
 			System.out.println("B학점입니다.");
 		}
 		// 3. 아니면 80점 이상인지
-		else if(num>=70) {
+		else if(num>=70 && 100 >=num) {
 			System.out.println("C학점입니다.");
 		}
 		// 3. 아니면 80점 이상인지
-		else if(num>=60) {
+		else if(num>=60 && 100 >=num) {
 			System.out.println("D학점입니다.");
 		}
 		
 		// 4. 아니면(0이다.)
-		else {
+		else if(num>=0 && 100 >=num) {
 			System.out.println("F학점입니다.");
+		}
+		else {
+			System.out.println("잘못된 점수 입력입니다.");
 		}
 	}
 
